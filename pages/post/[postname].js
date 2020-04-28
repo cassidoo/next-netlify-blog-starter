@@ -3,6 +3,7 @@ import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 
 import Layout from '../../components/Layout'
+import getSlugs from '../../utils/getSlugs'
 
 export default function BlogTemplate(props) {
   if (!props.frontmatter) return <></>
@@ -72,14 +73,7 @@ export async function getStaticProps({ ...ctx }) {
 
 export async function getStaticPaths() {
   const blogSlugs = ((context) => {
-    const keys = context.keys()
-
-    const data = keys.map((key, index) => {
-      let slug = key.replace(/^.*[\\\/]/, '').slice(0, -3)
-
-      return slug
-    })
-    return data
+    return getSlugs(context)
   })(require.context('../../posts', true, /\.md$/))
 
   const paths = blogSlugs.map((slug) => `/post/${slug}`)
