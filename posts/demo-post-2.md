@@ -1,6 +1,6 @@
 ---
 title: 'The city of coffee-drinkers'
-author: Netlifriends
+author: 'Netlifriends'
 date: '2020-04-28'
 ---
 

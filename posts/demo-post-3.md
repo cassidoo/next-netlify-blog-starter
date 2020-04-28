@@ -1,6 +1,6 @@
 ---
 title: 'The city of introverts'
-author: Netlifriends
+author: 'Netlifriends'
 date: '2020-04-29'
 ---
 
