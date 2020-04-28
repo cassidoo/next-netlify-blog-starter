@@ -7,7 +7,7 @@ const Index = ({ posts, title, description }) => {
   return (
     <>
       <Layout pathname="/" siteTitle={title}>
-        <h1 className="title">Welcome to my blog!</h1>
+        <h1 className="title">Welcome to this demo blog!</h1>
 
         <p className="description">
           This is a simple blog built with Next, easily deployable on{' '}
@@ -17,6 +17,12 @@ const Index = ({ posts, title, description }) => {
           <PostList posts={posts} />
         </main>
       </Layout>
+      <style jsx>{`
+        .title {
+          margin: 1rem auto;
+          font-size: 3rem;
+        }
+      `}</style>
     </>
   )
 }
@@ -44,8 +50,6 @@ export async function getStaticProps() {
     })
     return data
   })(require.context('../posts', true, /\.md$/))
-
-  console.log(posts)
 
   return {
     props: {

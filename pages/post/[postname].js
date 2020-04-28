@@ -1,22 +1,46 @@
+import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 
 import Layout from '../../components/Layout'
 
 export default function BlogTemplate(props) {
-  console.log(props)
-
   if (!props.frontmatter) return <></>
 
   return (
-    <Layout siteTitle={props.siteTitle}>
-      <article>
-        <h1>{props.frontmatter.title}</h1>
-        <div>
-          <ReactMarkdown source={props.markdownBody} />
+    <>
+      <Layout siteTitle={props.siteTitle}>
+        <div className="back">
+          ←{' '}
+          <Link href="/">
+            <a>Back to post list</a>
+          </Link>
         </div>
-      </article>
-    </Layout>
+        <article>
+          <h1>{props.frontmatter.title}</h1>
+          <div>
+            <ReactMarkdown source={props.markdownBody} />
+          </div>
+        </article>
+      </Layout>
+      <style jsx>{`
+        article {
+          width: 100%;
+          max-width: 1200px;
+        }
+        h1 {
+          font-size: 3rem;
+        }
+        h3 {
+          font-size: 2rem;
+        }
+        .back {
+          width: 100%;
+          max-width: 1200px;
+          color: #00a395;
+        }
+      `}</style>
+    </>
   )
 }
 
