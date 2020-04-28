@@ -18,6 +18,13 @@ export default function BlogTemplate(props) {
         </div>
         <article>
           <h1>{props.frontmatter.title}</h1>
+          {props.frontmatter.hero_image && (
+            <img
+              src={props.frontmatter.hero_image}
+              className="hero"
+              alt={props.frontmatter.title}
+            />
+          )}
           <div>
             <ReactMarkdown source={props.markdownBody} />
           </div>
@@ -33,6 +40,9 @@ export default function BlogTemplate(props) {
         }
         h3 {
           font-size: 2rem;
+        }
+        .hero {
+          width: 100%;
         }
         .back {
           width: 100%;
