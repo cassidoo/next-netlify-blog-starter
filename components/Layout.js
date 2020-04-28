@@ -10,7 +10,6 @@ export default function Layout(props) {
         <meta charSet="utf-8" />
         <meta name="Description" content={props.description}></meta>
         <title>{props.title}</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&display=swap');
@@ -55,12 +54,19 @@ export default function Layout(props) {
           justify-content: center;
           align-items: center;
         }
+
+        footer img {
+          padding: 0 5px;
+          height: 1rem;
+        }
       `}</style>
       <section className="layout">
         <Header siteTitle={props.siteTitle} />
         <div className="content">{props.children}</div>
       </section>
-      <footer>Built with 💙 for you</footer>
+      <footer>
+        Built with <img src="/netliheart.svg" alt="Netlify Heart" /> for you
+      </footer>
     </>
   )
 }
