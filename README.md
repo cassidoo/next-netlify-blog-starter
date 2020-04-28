@@ -1,6 +1,6 @@
 # Next + Netlify Markdown Blog Starter
 
-This is a lightweight Next.js Markdown Blog, configured so you can one-click install a blog and deploy it to Netlify!
+This is a lightweight Next.js (v9.3+) Markdown Blog, configured so you can one-click install a blog and deploy it to Netlify!
 
 Get started by clicking here:
 
@@ -36,3 +36,20 @@ If you'd like to write a new blog post, write it in Markdown in the `posts` dire
 ### Styling
 
 Included are some basic styles with [styled-jsx](https://github.com/zeit/styled-jsx), which is included out of the box with Next.js. Because this uses Next.js 9.3, there's also built-in Sass support and CSS Module support, if you'd prefer to use those.
+
+The font used is [Inter](https://fonts.google.com/specimen/Inter).
+
+### Hero images
+
+You may include an optional hero image in your posts. Put the images in `public/static/`, and then include in your blog .md file like so:
+
+```
+---
+title: 'Post title'
+author: 'Post author'
+date: '2020-04-27'
+hero_image: ../static/example.jpg
+---
+```
+
+See `demo-post-1.md` for an example of this.
