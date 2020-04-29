@@ -3,10 +3,10 @@ import PostList from '../components/PostList'
 
 import getPosts from '../utils/getPosts'
 
-const Index = ({ posts, title, description }) => {
+const Index = ({ posts, title, description, ...props }) => {
   return (
     <>
-      <Layout pathname="/" siteTitle={title}>
+      <Layout pathname="/" pageTitle={title} description={description}>
         <h1 className="title">Welcome to this demo blog!</h1>
 
         <p className="description">
@@ -16,6 +16,13 @@ const Index = ({ posts, title, description }) => {
         <main>
           <PostList posts={posts} />
         </main>
+        <p>
+          You can look at the repository for this project{' '}
+          <a href="https://github.com/cassidoo/next-netlify-blog-starter">
+            here
+          </a>
+          .
+        </p>
       </Layout>
       <style jsx>{`
         .title {

@@ -10,7 +10,7 @@ export default function BlogTemplate(props) {
 
   return (
     <>
-      <Layout siteTitle={props.siteTitle}>
+      <Layout pageTitle={`${props.siteTitle} | ${props.frontmatter.title}`}>
         <div className="back">
           ←{' '}
           <Link href="/">

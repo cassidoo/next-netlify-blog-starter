@@ -2,14 +2,20 @@ import Head from 'next/head'
 
 import Header from './Header'
 
-export default function Layout(props) {
+export default function Layout({
+  children,
+  pageTitle,
+  description,
+  siteTitle,
+  ...props
+}) {
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="Description" content={props.description}></meta>
-        <title>{props.title}</title>
+        <meta name="Description" content={description}></meta>
+        <title>{pageTitle}</title>
       </Head>
       <style jsx global>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800;900&display=swap');
@@ -61,12 +67,22 @@ export default function Layout(props) {
         }
       `}</style>
       <section className="layout">
-        <Header siteTitle={props.siteTitle} />
-        <div className="content">{props.children}</div>
+        <Header siteTitle={siteTitle} />
+        <div className="content">{children}</div>
       </section>
       <footer>
         Built with <img src="/netliheart.svg" alt="Netlify Heart" /> for you
       </footer>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const configData = await import(`../siteconfig.json`)
+
+  return {
+    props: {
+      siteTitle: configData.default.title,
+    },
+  }
 }

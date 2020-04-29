@@ -1,6 +1,6 @@
 # Next + Netlify Markdown Blog Starter
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8979c7b5-18bf-4837-9861-2d9a5844b19b/deploy-status)](https://app.netlify.com/sites/vibrant-swirles-065c76/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8979c7b5-18bf-4837-9861-2d9a5844b19b/deploy-status)](https://app.netlify.com/sites/next-netlify-blog-starter/deploys)
 
 This is a lightweight Next.js (v9.3+) Markdown Blog, configured so you can one-click install a blog and deploy it to Netlify!
 
