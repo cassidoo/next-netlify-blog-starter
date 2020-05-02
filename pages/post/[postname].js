@@ -5,12 +5,12 @@ import ReactMarkdown from 'react-markdown'
 import Layout from '../../components/Layout'
 import getSlugs from '../../utils/getSlugs'
 
-export default function BlogTemplate(props) {
-  if (!props.frontmatter) return <></>
+export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
+  if (!frontmatter) return <></>
 
   return (
     <>
-      <Layout pageTitle={`${props.siteTitle} | ${props.frontmatter.title}`}>
+      <Layout pageTitle={`${siteTitle} | ${frontmatter.title}`}>
         <div className="back">
           ←{' '}
           <Link href="/">
@@ -18,16 +18,16 @@ export default function BlogTemplate(props) {
           </Link>
         </div>
         <article>
-          <h1>{props.frontmatter.title}</h1>
-          {props.frontmatter.hero_image && (
+          <h1>{frontmatter.title}</h1>
+          {frontmatter.hero_image && (
             <img
-              src={props.frontmatter.hero_image}
+              src={frontmatter.hero_image}
               className="hero"
-              alt={props.frontmatter.title}
+              alt={frontmatter.title}
             />
           )}
           <div>
-            <ReactMarkdown source={props.markdownBody} />
+            <ReactMarkdown source={markdownBody} />
           </div>
         </article>
       </Layout>

@@ -2,13 +2,7 @@ import Head from 'next/head'
 
 import Header from './Header'
 
-export default function Layout({
-  children,
-  pageTitle,
-  description,
-  siteTitle,
-  ...props
-}) {
+export default function Layout({ children, pageTitle, description, ...props }) {
   return (
     <>
       <Head>
@@ -67,7 +61,7 @@ export default function Layout({
         }
       `}</style>
       <section className="layout">
-        <Header siteTitle={siteTitle} />
+        <Header />
         <div className="content">{children}</div>
       </section>
       <footer>
