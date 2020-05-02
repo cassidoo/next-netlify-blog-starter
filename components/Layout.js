@@ -76,13 +76,3 @@ export default function Layout({
     </>
   )
 }
-
-export async function getStaticProps() {
-  const configData = await import(`../siteconfig.json`)
-
-  return {
-    props: {
-      siteTitle: configData.default.title,
-    },
-  }
-}
