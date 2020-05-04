@@ -26,7 +26,7 @@ If you'd like to write a new blog post, write it in Markdown in the `posts` dire
 
 **Option one:** One-click deploy
 
-[![Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-netlify-blog-starter&utm_source=github&utm_medium=blogstarter-cs&utm_campaign=devex)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-netlify-blog-starter&utm_source=github&utm_medium=blogstarter-cs&utm_campaign=devex)
 
 **Option two:** Manual clone
 
