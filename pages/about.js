@@ -15,7 +15,12 @@ const About = ({ title, description, ...props }) => {
           You can check out the{' '}
           <a href="https://github.com/cassidoo/next-netlify-blog-starter">
             repo here.
+          </a>{' '}
+          If you'd like to build it yourself,{' '}
+          <a href="https://url.netlify.com/ByVW0bCF8">
+            here is a tutorial on how to do so
           </a>
+          !
         </p>
 
         <p>

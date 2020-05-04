@@ -8,6 +8,8 @@ Get started by clicking here:
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-netlify-blog-starter)
 
+Or, if you'd like to build it yourself, here's a [tutorial blog post](https://url.netlify.com/ByVW0bCF8) that should get you on the right track!
+
 ## The nitty gritty
 
 If you'd like to work with this project locally, run the development server:

@@ -21,7 +21,8 @@ const Index = ({ posts, title, description, ...props }) => {
           <a href="https://github.com/cassidoo/next-netlify-blog-starter">
             here
           </a>
-          .
+          , and a tutorial on how to build it {` `}
+          <a href="https://url.netlify.com/ByVW0bCF8">here</a>.
         </p>
       </Layout>
       <style jsx>{`
