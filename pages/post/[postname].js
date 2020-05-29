@@ -2,8 +2,8 @@ import Link from 'next/link'
 import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 
-import Layout from '../../components/Layout'
-import getSlugs from '../../utils/getSlugs'
+import Layout from '@components/Layout'
+import getSlugs from '@utils/getSlugs'
 
 export default function BlogPost({ siteTitle, frontmatter, markdownBody }) {
   if (!frontmatter) return <></>

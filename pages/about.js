@@ -1,4 +1,4 @@
-import Layout from '../components/Layout'
+import Layout from '@components/Layout'
 
 const About = ({ title, description, ...props }) => {
   return (
