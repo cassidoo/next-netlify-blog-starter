@@ -7,23 +7,10 @@ const Index = ({ posts, title, description, ...props }) => {
   return (
     <>
       <Layout pageTitle={title} description={description}>
-        <h1 className="title">Welcome to this demo blog!</h1>
-
-        <p className="description">
-          This is a simple blog built with Next, easily deployable on{' '}
-          <a href="https://url.netlify.com/r1j6ybSYU">Netlify</a>.
-        </p>
+        <h1 className="title">This content is very old and mostly broken!</h1>
         <main>
-          <PostList posts={posts} path='posts'/>
+          <PostList posts={posts} path='archive'/>
         </main>
-        <p>
-          You can look at the repository for this project{' '}
-          <a href="https://github.com/cassidoo/next-netlify-blog-starter">
-            here
-          </a>
-          , and a tutorial on how to build it {` `}
-          <a href="https://url.netlify.com/ByVW0bCF8">here</a>.
-        </p>
       </Layout>
       <style jsx>{`
         .title {
@@ -42,7 +29,7 @@ export async function getStaticProps() {
 
   const posts = ((context) => {
     return getPosts(context)
-  })(require.context('../posts', true, /\.md$/))
+  })(require.context('../archive', true, /\.md$/))
 
   return {
     props: {

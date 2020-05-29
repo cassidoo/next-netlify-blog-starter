@@ -4,30 +4,22 @@ const About = ({ title, description, ...props }) => {
   return (
     <>
       <Layout pageTitle={`${title} | About`} description={description}>
-        <h1 className="title">Welcome to this demo blog!</h1>
+        <h1 className="title">Welcome!</h1>
 
         <p className="description">
-          This is a simple blog built with Next, easily deployable on{' '}
-          <a href="https://url.netlify.com/r1j6ybSYU">Netlify</a>.
+        I am a full stack engineer with over 10 years of experience building scalable web applications and contributing to  technical strategy, product development and growth engineering.
+        I’ve led teams in creating applications and features that deliver deep value to customers and that earn strong revenue.
+        I believe that to build great software you need to deeply understand your customers.
+        I’m fascinated by the mechanisms of learning and skill acquisition and find that one of the most rewarding aspects of being an experienced engineer is the opportunity to help other engineers grow their skills.
         </p>
 
-        <p>
-          You can check out the{' '}
-          <a href="https://github.com/cassidoo/next-netlify-blog-starter">
-            repo here.
-          </a>{' '}
-          If you'd like to build it yourself,{' '}
-          <a href="https://url.netlify.com/ByVW0bCF8">
-            here is a tutorial on how to do so
-          </a>
-          !
-        </p>
-
-        <p>
-          This project includes a basic layout and header, base styles, dynamic
-          routing with getStaticPaths, and posts saved as Markdown.
-        </p>
       </Layout>
+      <style jsx>{`
+        .description {
+          width: 100%;
+          max-width: 1200px;
+        }
+      `}</style>
     </>
   )
 }
