@@ -4,7 +4,7 @@
 
 This is a lightweight Next.js (v9.5+) Markdown Blog, configured so you can one-click install a blog and deploy it to [Netlify](https://url.netlify.com/r1j6ybSYU)!
 
-Get started by clicking here:
+Get started by clicking here (this will clone the repo and deploy the site):
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/cassidoo/next-netlify-blog-starter&utm_source=github&utm_medium=blogstarter-cs&utm_campaign=devex)
 
