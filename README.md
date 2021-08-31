@@ -39,7 +39,7 @@ If you'd like to write a new blog post, write it in Markdown in the `posts` dire
 
 ### Styling
 
-Included are some basic styles with [styled-jsx](https://github.com/zeit/styled-jsx), which is included out of the box with Next.js. Because this uses Next.js 9.3, there's also built-in Sass support and CSS Module support, if you'd prefer to use those.
+Included are some basic styles with [styled-jsx](https://github.com/vercel/styled-jsx), which is included out of the box with Next.js. There's also built-in Sass support and CSS Module support, if you'd prefer to use those.
 
 The font used is [Inter](https://fonts.google.com/specimen/Inter).
 
