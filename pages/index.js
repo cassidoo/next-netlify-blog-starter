@@ -42,7 +42,7 @@ export async function getStaticProps() {
 
   const posts = ((context) => {
     return getPosts(context)
-  })(require.context('../posts', true, /\.md$/))
+  })(require.context('../posts', true, /\.\/.*\.md$/))
 
   return {
     props: {
